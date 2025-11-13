@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile Website</title>
+    <title>Sanjeevadharsh B R | ECE Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,78 +11,158 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <section id="hero">
             <div class="hero-content">
-                <h1>Hello, I'm [Your Name]</h1>
-                <p>[Your Brief Professional Title/Introduction]</p>
-                <button class="cta-button">Contact Me</button>
+                <h1>Hello, I'm <span style="color:#007bff;">Sanjeevadharsh B R</span></h1>
+                <p>Final Year ECE Student | Java Developer | IoT & Antenna Design Enthusiast</p>
+                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Contact Me</button>
             </div>
         </section>
 
+        <!-- ABOUT SECTION -->
         <section id="about" class="profile-section">
-            <h2>About Me</h2>
-            <img src="[path/to/your/profile-picture.jpg]" alt="Your Profile Picture" class="profile-image">
-            <p>[Detailed information about your background, experience, interests, and career goals. This is a primary area for your profile.]</p>
-            <p>[You can add more paragraphs here to elaborate further on your story and what drives you.]</p>
+            <h2>Objectives</h2>
+            <img src="myphoto.jpg" alt="Sanjeevadharsh Profile Picture" class="profile-image">
+            <p>
+                A self-motivated individual passionate about working in diverse team environments, committed to continuous learning.  
+                Dedicated to applying knowledge dynamically to contribute to the growth and success of the organization.
+            </p>
         </section>
 
-        <section id="skills" class="profile-section">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 3]</li>
-                <li>[Skill 4]</li>
-                </ul>
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="profile-section">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li>
+                    <strong>M.Kumarasamy College of Engineering</strong> (2022–2026)  
+                    <br>Bachelor of Engineering in Electronics and Communication Engineering — <strong>CGPA: 8.71/10</strong>  
+                    <br><em>Karur, Tamil Nadu</em>
+                </li>
+                <li>
+                    <strong>Little Angels’ English Higher Secondary School</strong> (2021–2022)  
+                    <br>Higher Secondary Certificate (ICSE) — <strong>88.2%</strong>  
+                    <br><em>Karur, Tamil Nadu</em>
+                </li>
+                <li>
+                    <strong>Little Angels’ English Higher Secondary School</strong> (2019–2020)  
+                    <br>Secondary School Leaving Certificate (ICSE) — <strong>82.33%</strong>  
+                    <br><em>Karur, Tamil Nadu</em>
+                </li>
+            </ul>
         </section>
 
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="profile-section">
+            <h2>Achievements</h2>
+            <ul class="achievements-list">
+                <li>🏆 Secured <strong>First Prize</strong> in the Tech Talk event at GENCRAFT’24.</li>
+                <li>📘 Qualified three levels of the <strong>Srinivasa Ramanujan Mathematical Quiz Competition</strong>.</li>
+                <li>💰 Secured <strong>First Prize at Srishti 2025</strong>, a National-level contest, with a cash prize of ₹10,000.</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS SECTION -->
         <section id="projects" class="profile-section">
             <h2>Projects</h2>
             <div class="project-grid">
+
                 <div class="project-item">
-                    <h3>[Project Title 1]</h3>
-                    <p>[Brief description of Project 1]</p>
-                    <a href="[link/to/project1]" target="_blank">View Project</a>
+                    <h3>IoT Enabled Energy Meter</h3>
+                    <p>
+                        Developed an IoT-based energy monitoring system enabling real-time consumption tracking and automatic billing.
+                        Integrated cloud storage using Firebase and Arduino IDE for smart data logging and energy optimization.
+                    </p>
                 </div>
+
                 <div class="project-item">
-                    <h3>[Project Title 2]</h3>
-                    <p>[Brief description of Project 2]</p>
-                    <a href="[link/to/project2]" target="_blank">View Project</a>
+                    <h3>2×2 Circularly Polarised Microstrip Patch Antenna for Ultra-Wide Band Applications</h3>
+                    <p>
+                        Designed and simulated a high-performance 2×2 circularly polarised microstrip patch antenna supporting UWB communication.
+                        Focused on improved bandwidth, axial ratio, and gain characteristics for next-gen wireless systems.
+                    </p>
                 </div>
+
+                <div class="project-item">
+                    <h3>Java with SQL Applications</h3>
+                    <p>
+                        Built multiple Java-based applications using JDBC and MySQL, including student management and ERP systems.
+                        Focused on CRUD operations, modular OOP design, and seamless backend connectivity for real-time data management.
+                    </p>
                 </div>
+            </div>
         </section>
 
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="profile-section">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+                <li><strong>Backend:</strong> Java, MySQL, JDBC</li>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>IoT Tools:</strong> Arduino IDE, Firebase</li>
+                <li><strong>Electronics:</strong> Digital Communication, Signal Processing, Antenna Design</li>
+            </ul>
+
+            <h3>Soft Skills</h3>
+            <ul class="skills-list">
+                <li>Leadership & Adaptability</li>
+                <li>Effective English Communication</li>
+                <li>Analytical & Organizational Thinking</li>
+                <li>Time Management</li>
+            </ul>
+        </section>
+
+        <!-- LEADERSHIP SECTION -->
+        <section id="leadership" class="profile-section">
+            <h2>Leadership Roles</h2>
+            <ul class="achievements-list">
+                <li>Unstop Campus Ambassador</li>
+                <li>Pragyan Campus Ambassador – NIT Trichy</li>
+                <li>Treasurer – IETE Student Forum</li>
+            </ul>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="profile-section">
+            <h2>Certifications</h2>
+            <ul class="achievements-list">
+                <li>🏅 Fundamentals of Java Programming – Coursera</li>
+                <li>🏅 STEP Certification – The Hindu Group</li>
+            </ul>
+        </section>
+
+        <!-- CO-CURRICULAR SECTION -->
+        <section id="activities" class="profile-section">
+            <h2>Co-Curricular Activities</h2>
+            <p>
+                Participated in a two-day workshop on <strong>Software Development</strong> at NIT Trichy, 
+                organized by the Programming Club, IIT Madras (Mar 2025).
+            </p>
+        </section>
+
+        <!-- CONTACT SECTION -->
         <section id="contact" class="profile-section">
             <h2>Contact Me</h2>
-            <p>Feel free to reach out!</p>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
+            <p>Feel free to reach out for collaborations, projects, or research discussions!</p>
+            <p><strong>Email:</strong> <a href="mailto:brsanjeevadharsh@gmail.com">brsanjeevadharsh@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91-9994905524</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/brsanjeevadharsh" target="_blank">linkedin.com/in/brsanjeevadharsh</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/brsanjeevadharsh" target="_blank">github.com/brsanjeevadharsh</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2025 Sanjeevadharsh B R. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
