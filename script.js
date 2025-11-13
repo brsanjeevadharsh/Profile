@@ -1,16 +1,31 @@
-// You can add JavaScript here for interactive elements.
-// For example, you could add an event listener to the "Contact Me" button.
-document.addEventListener('DOMContentLoaded', function() {
-    const ctaButton = document.querySelector('.cta-button');
-    if (ctaButton) {
-        ctaButton.addEventListener('click', function() {
-            // You can add functionality here, like scrolling to the contact section
-            const contactSection = document.getElementById('contact');
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
+// Simple smooth scroll animation for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 });
 
-// More JavaScript can be added as your website evolves.
+// Fade-in animation on scroll
+const fadeElems = document.querySelectorAll("section");
+
+const fadeInOnScroll = () => {
+  fadeElems.forEach((elem) => {
+    const rect = elem.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      elem.style.opacity = 1;
+      elem.style.transform = "translateY(0)";
+    }
+  });
+};
+
+fadeElems.forEach((elem) => {
+  elem.style.opacity = 0;
+  elem.style.transform = "translateY(20px)";
+  elem.style.transition = "all 0.6s ease-out";
+});
+
+window.addEventListener("scroll", fadeInOnScroll);
+window.addEventListener("load", fadeInOnScroll);
